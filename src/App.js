@@ -6,7 +6,7 @@ import Content3 from './Experience';
 import Signup from './Signup';
 import FooterContainer from './Slog';
 import FooterContainer2 from './FooterContainer2';
-import xm from './xm.jpg';
+import xm from './images/xm.jpg';
 
 function App() {
   const h1Style = css`

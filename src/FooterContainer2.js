@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import todo from './todo.png';
-import countdown from './countdown.png';
-import ecommerce from './ecommerce.png';
-import randomColor from './color.png';
-import weather from './weather.png';
+import todo from './images/todo.png';
+import countdown from './images/countdown.png';
+import ecommerce from './images/ecommerce.png';
+import randomColor from './images/color.png';
+import weather from './images/weather.png';
 
 export default function FooterContainer2() {
   const cartTableStyle = css`

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import fashion from './luxusmode.jpg';
+import fashion from './images/luxusmode.jpg';
 
 export default function Content3() {
   const divContainerStyle = css`

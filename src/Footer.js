@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import twitter from './twitter.png';
-import github from './github.png';
-import linkedIn from './linkedIn.png';
-import email from './email.png';
-import tel from './tel.png';
+import twitter from './images/twitter.png';
+import github from './images/github.png';
+import linkedIn from './images/linkedIn.png';
+import email from './images/email.png';
+import tel from './images/tel.png';
 
 export default function Footer() {
   const footerh3Style = css`

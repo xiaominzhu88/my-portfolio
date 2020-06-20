@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import fluidSmallRight from './Image-65.jpg';
+import fluidSmallRight from './images/Image-65.jpg';
 
 export default function Content2() {
   const contentStyle = css`
