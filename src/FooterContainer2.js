@@ -34,7 +34,6 @@ export default function FooterContainer2() {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    box-sizing: border-box;
   `;
 
   const h2Style = css`
@@ -49,18 +48,15 @@ export default function FooterContainer2() {
   `;
 
   const footerPStyle = css`
-    margin-bottom: 0 !important;
     font-size: 1.2rem;
     font-weight: 400;
-    opacity: 0.8;
     color: #000333;
-    margin-top: 0;
-    box-sizing: border-box;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin: 0 auto;
+
+    @media (max-width: 450px) {
+      width: 85%;
+      margin: 0 auto;
+    }
   `;
 
   const col6 = css`
@@ -77,7 +73,6 @@ export default function FooterContainer2() {
     border-radius: 0.25rem 0.25rem 0 0;
     padding: 0;
     background-color: transparent;
-    transition: 0.3s ease-in-out;
     margin-bottom: 0;
     @media (max-width: 450px) {
       padding: 0.5em;

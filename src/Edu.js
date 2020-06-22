@@ -4,41 +4,20 @@ import fluidSmallRight from './images/Image-65.jpg';
 
 export default function Content2() {
   const contentStyle = css`
-    padding-bottom: 8.125rem;
-    @media (min-width: 768px) {
-      -ms-flex-align: center !important;
-      align-items: center !important;
+    @media (max-width: 450px) {
+      margin: 1em auto;
+      display: block;
     }
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    align-items: center;
     padding-bottom: 1em;
-    box-sizing: border-box;
   `;
 
   const divStyle = css`
-    @media (min-width: 768px) {
-      margin-bottom: 0 !important;
-    }
-    @media (min-width: 768px) {
-      -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-    position: relative;
     width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    box-sizing: border-box;
-    display: block;
   `;
+
   const span = css`
     color: #49c39e;
     background-color: rgba(73, 195, 158, 0.1);
@@ -47,10 +26,11 @@ export default function Content2() {
     font-weight: 900;
     padding: 0.625rem 1.125rem;
     border-radius: 5px;
-    transition: 0.2s ease-in-out;
     margin-bottom: 1rem !important;
     margin-top: 2rem;
-    box-sizing: border-box;
+    @media (max-width: 450px) {
+      margin: 1em auto;
+    }
   `;
 
   const h3Style = css`
@@ -63,29 +43,21 @@ export default function Content2() {
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     box-sizing: border-box;
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
   `;
 
   return (
-    <div
-      css={contentStyle}
-      className="row justify-content-lg-between align-items-md-center space-3-bottom space-2-bottom--lg col-12"
-    >
-      <div css={divStyle} className="col-md-6 mb-5 mb-md-0">
+    <div css={contentStyle} className="edu-container">
+      <div css={divStyle} className="edu">
         <div
           className="pr-md-4"
           css={css`
-            @media (min-width: 768px) {
-              padding-right: 1.5rem !important;
+            @media (max-width: 450px) {
             }
             box-sizing: border-box;
             display: block;
           `}
         >
-          <span css={span} className="u-label u-label--green mb-3">
+          <span css={span} className="emotion-span">
             Education
           </span>
           <h2 css={h3Style}>Education Overview</h2>
@@ -108,50 +80,23 @@ export default function Content2() {
             Vienna Austria
           </p>
         </div>
-
-        <div
-          css={css`
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            @media (min-width: 768px) {
-              padding-left: 1.5rem !important;
-            }
-            box-sizing: border-box;
-            display: block;
-          `}
-          className="pl-md-4 space-1"
-        ></div>
       </div>
 
-      <div
-        className="col-md-6"
-        css={css`
-          @media (min-width: 768px) {
-            -ms-flex-order: 1;
-            order: 1;
-          }
-          @media (min-width: 768px) {
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
-          }
-          position: relative;
-          width: 100%;
-          min-height: 1px;
-          padding-right: 15px;
-          padding-left: 15px;
-          box-sizing: border-box;
-          display: block;
-        `}
-      >
+      <div className="edu-image">
         <img
           className="img-fluid-right"
           src={fluidSmallRight}
           css={css`
             max-width: 100%;
             width: 20em;
-            height: 13em;
+            height: 10em;
             border-radius: 5px;
+            margin-left: 2em;
+            @media (max-width: 450px) {
+              margin: 1em auto;
+              width: 10em;
+              height: 7em;
+            }
           `}
           alt="music uni vienna"
         />

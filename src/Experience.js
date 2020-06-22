@@ -4,23 +4,17 @@ import fashion from './images/luxusmode.jpg';
 
 export default function Content3() {
   const divContainerStyle = css`
-    @media (min-width: 768px) {
+    @media (max-width: 450px) {
       align-items: center !important;
     }
-    margin: 0 auto;
+    margin: 1.5em auto;
   `;
 
-  const textContainerStyle = css`
-    box-sizing: border-box;
-    display: block;
-  `;
   const textContainer2Style = css`
-    @media (min-width: 768px) {
-      padding-left: 1.5rem !important;
-      order: 2;
+    @media (max-width: 450px) {
+      margin: 1em auto;
     }
-    box-sizing: border-box;
-    display: block;
+    margin: 2em auto;
   `;
 
   const h3Style = css`
@@ -69,43 +63,43 @@ export default function Content3() {
   `;
 
   return (
-    <div
-      css={divContainerStyle}
-      className="row justify-content-lg-between align-items-md-center bottom--lg col-12"
-    >
-      <div
-        css={textContainerStyle}
-        className="col-md-6 order-md-2 mb-5 mb-md-0"
-      >
-        <div css={textContainer2Style} className="pl-md-4">
-          <span css={span} className="u-label u-label--yellow mb-3">
-            Experience
-          </span>
-          <h2 css={h3Style}>Professional Experience</h2>
-          <h5 css={h5Style}>Film and Fashion</h5>
-          <p>
-            Catering assistant at „Allegro Film“ Austria
-            <br />
-            2011
-          </p>
-          <p class="text-luxus">
-            Assistant Store Manager for luxury-mode Company
-            <br />
-            2012 - 2020
-          </p>
-        </div>
+    <div css={divContainerStyle} className="ex-container">
+      <div css={textContainer2Style} className="ex-text-container">
+        <span css={span} className="u-label u-label--yellow mb-3">
+          Experience
+        </span>
+        <h2 css={h3Style}>Professional Experience</h2>
+        <h5 css={h5Style}>Film and Fashion</h5>
+        <p>
+          Catering assistant at „Allegro Film“ Austria
+          <br />
+          2011
+        </p>
+        <p class="text-luxus">
+          Assistant Store Manager for luxury-mode Company
+          <br />
+          2012 - 2020
+        </p>
       </div>
-      <div className="col-md-6 order-md-1 ">
+
+      <div className="ex-image">
         <img
-          className="img-fluid"
+          className="ex-img"
           css={css`
             max-width: 100%;
-            width: 20em;
-            height: 13em;
+            width: 18em;
+            height: 12em;
             border-radius: 5px;
+            margin: 2em auto;
+
+            @media (max-width: 450px) {
+              margin: 1.5em auto;
+              width: 10em;
+              height: 7em;
+            }
           `}
           src={fashion}
-          alt="Web App manager"
+          alt="fasion"
         />
       </div>
     </div>
