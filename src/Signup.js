@@ -7,6 +7,11 @@ export default function Signup() {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: 450px) {
+      display: block;
+      text-align: center;
+      height: 6em;
+    }
   `;
 
   const h2Style = css`
@@ -15,6 +20,9 @@ export default function Signup() {
     margin: 0 auto;
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     padding: 1em;
+    @media (max-width: 450px) {
+      text-align: center;
+    }
   `;
 
   return (
@@ -35,12 +43,15 @@ export default function Signup() {
         </h2>
         <p
           css={css`
-            text-rendering: optimizeLegibility;
             font-size: 0.8rem;
             font-weight: 400;
             margin: 1em auto;
+            @media (max-width: 450px) {
+              text-align: center;
+              margin: 0 auto;
+            }
           `}
-          className="small text-muted"
+          className="small"
         >
           ©Zhu 2020
         </p>
