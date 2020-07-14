@@ -1,9 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import Footer from './Footer.js';
-import Content2 from './Edu.js';
-import Content3 from './Experience';
-import Signup from './Signup';
+import Exp from './Experience';
 import FooterContainer from './Slog';
 import FooterContainer2 from './FooterContainer2';
 import xm from './images/xm.jpg';
@@ -14,14 +12,14 @@ function App() {
     line-height: calc(2.5rem + (1vw - 3.75px) * 2.2535);
     font-weight: 700;
     margin: 0 auto;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    color: #000333;
+    font-family: 'Fira Mono', monospace;
+    color: #494444;
     box-sizing: border-box;
-    padding: 1.5em;
+    padding: 1em;
 
     @media (max-width: 450px) {
       margin: 0 auto;
-      padding: 1.2em;
+      padding: 1em;
       line-height: 1.5em;
       font-size: 1.5em;
     }
@@ -32,8 +30,9 @@ function App() {
     line-height: calc(1.875rem + 6 * ((100vw - 21rem) / 680));
     font-weight: 700;
     margin: 1em auto;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    color: #000333;
+    font-family: 'Fira Mono', monospace;
+    color: #494444;
+
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
     display: block;
@@ -67,13 +66,12 @@ function App() {
       css={css`
         display: block;
         margin: 0 auto;
-        font-family: 'Nunito', Helvetica, Arial, sans-serif;
+        font-family: 'Fira Mono', monospace;
         font-size: 1.1rem;
         font-weight: 400;
         line-height: 1.7;
         padding: 0.6em;
         width: 100%;
-        margin: 0 auto;
       `}
     >
       {/* <header
@@ -175,28 +173,15 @@ function App() {
               width: 100% !important;
             }
 
-            margin: 1.5rem auto;
+            margin: 0 auto;
             box-sizing: border-box;
             display: block;
           `}
         >
           <h1 css={h1Style} className="display">
-            Hi! Welcome to my portfolio
+            Hi! I'm Xiaomin Zhu <br />
+            Welcome to my portfolio
           </h1>
-
-          <p
-            className="lead mb-0"
-            css={css`
-              font-size: 1.2rem;
-              margin: 0 auto;
-
-              @media (max-width: 450px) {
-                font-size: 1rem;
-              }
-            `}
-          >
-            I'm Xiaomin Zhu and I'm a Front-end Developer
-          </p>
         </div>
 
         <img
@@ -250,25 +235,24 @@ function App() {
               margin-bottom: 2rem !important;
             `}
           >
-            <h2 css={h2_style}>About Me</h2>
+            <h2 css={h2_style}>
+              About Me{' '}
+              <span role="img" aria-label="emoji">
+                ☘️
+              </span>
+            </h2>
             <p css={pStyle}>
-              Musician, Assistant Store Manager for Luxury-fashion Company,
-              <br /> and now <br />
-              I'm a
-              <br />
-              Frontend Developer
+              Frontend Web Developer, Musician, Assistant Store Manager
             </p>
           </div>
           <hr />
 
-          <Content2 />
-          <Content3 />
+          <Exp />
 
           <FooterContainer />
           <FooterContainer2 />
 
           <Footer />
-          <Signup />
         </div>
       </div>
     </div>

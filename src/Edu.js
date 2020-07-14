@@ -38,7 +38,7 @@ export default function Content2() {
     margin-bottom: 0.5rem;
     font-weight: 700;
     line-height: 1.5;
-    color: #000333;
+    color: #494444;
     margin-top: 0;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     box-sizing: border-box;

@@ -16,14 +16,15 @@ export default function FooterContainer() {
     line-height: calc(1.875rem + 6 * ((100vw - 21rem) / 680));
     font-weight: 700;
     margin: 1em auto;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Fira Mono', monospace;
     box-sizing: border-box;
+    color: #494444;
   `;
 
   const pStyle = css`
     font-size: 1.2rem;
     font-weight: 400;
-    color: #000333;
+    color: #034b35;
     margin: 0 auto;
     box-sizing: border-box;
 
@@ -49,7 +50,7 @@ export default function FooterContainer() {
         Today
       </span>
 
-      <h2 css={h2Style}>As Frontend developer</h2>
+      <h2 css={h2Style}>Frontend Web Developer</h2>
       <p css={pStyle} className="lead mb-0">
         {' '}
         Life without change is incomplete, thanks to the Web Resources{' '}

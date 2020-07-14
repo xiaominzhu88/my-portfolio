@@ -22,9 +22,9 @@ export default function Content3() {
     margin-bottom: 0.5rem;
     font-weight: 700;
     line-height: 1.5;
-    color: #000333;
+    color: #494444;
     margin-top: 0;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Fira Mono', monospace;
     box-sizing: border-box;
     display: block;
     margin-block-start: 1em;
@@ -40,7 +40,7 @@ export default function Content3() {
     line-height: 1.5;
     color: #000333;
     margin-top: 0;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Fira Mono', monospace;
     box-sizing: border-box;
     display: block;
     margin-block-start: 1.67em;
@@ -68,17 +68,11 @@ export default function Content3() {
         <span css={span} className="u-label u-label--yellow mb-3">
           Experience
         </span>
-        <h2 css={h3Style}>Professional Experience</h2>
+        <h2 css={h3Style}>Professional Experience </h2>
         <h5 css={h5Style}>Film and Fashion</h5>
-        <p>
-          Catering assistant at „Allegro Film“ Austria
-          <br />
-          2011
-        </p>
+        <p>Catering assistant at „Allegro Film“ Austria</p>
         <p class="text-luxus">
           Assistant Store Manager for luxury-mode Company
-          <br />
-          2012 - 2020
         </p>
       </div>
 

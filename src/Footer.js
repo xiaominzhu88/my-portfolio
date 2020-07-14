@@ -10,10 +10,10 @@ export default function Footer() {
   const footerh3Style = css`
     color: #fff !important;
     margin-bottom: 1rem !important;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 500;
     line-height: 1.5;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: 'Fira Mono', monospace;
     box-sizing: border-box;
     display: block;
     padding: 1em;
@@ -45,9 +45,14 @@ export default function Footer() {
         box-sizing: border-box;
       `}
     >
-      <div className="col-6 col-md-3 col-lg-2 order-lg-6 mb-7 mb-lg-0">
+      <div
+        className="footer"
+        css={css`
+          height: 100%;
+        `}
+      >
         <h3 css={footerh3Style} className="h6 text-white mb-3">
-          Get In Touch
+          Thank You
         </h3>
 
         <div
@@ -62,7 +67,6 @@ export default function Footer() {
             <img
               src={twitter}
               css={css`
-                height: 17.5px;
                 height: 29px;
               `}
               alt="twitter"
@@ -76,7 +80,6 @@ export default function Footer() {
             <img
               src={github}
               css={css`
-                height: 17.5px;
                 height: 29px;
                 margin-left: 1em;
               `}
@@ -84,14 +87,13 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/m-a-xiaomin-zhu-79462815/"
+            href="https://www.linkedin.com/in/xiaomin-zhu-79462815/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
               src={linkedIn}
               css={css`
-                height: 17.5px;
                 height: 29px;
                 margin-left: 1em;
               `}
@@ -107,7 +109,7 @@ export default function Footer() {
             width: 1.5em;
             margin-left: 1em;
           `}
-          alt="github"
+          alt="email"
         />
 
         <img
@@ -117,24 +119,9 @@ export default function Footer() {
             width: 2em;
             margin-left: 1em;
           `}
-          alt="github"
+          alt="tel"
         />
       </div>
-
-      <div
-        css={css`
-          align-items: flex-start !important;
-          flex-direction: column !important;
-          display: flex !important;
-          position: relative;
-          width: 100%;
-          min-height: 1px;
-          padding-right: 15px;
-          padding-left: 15px;
-          box-sizing: border-box;
-        `}
-        className="col-lg-4 order-lg-1 d-flex align-items-start flex-column"
-      ></div>
     </footer>
   );
 }

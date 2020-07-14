@@ -42,17 +42,18 @@ export default function FooterContainer2() {
     line-height: calc(1.875rem + 6 * ((100vw - 21rem) / 680));
     font-weight: 700;
     margin: 1em auto;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Fira Mono', monospace;
     color: #29541c;
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
   `;
 
   const footerPStyle = css`
-    font-size: 1.2rem;
+    font-size: 1em;
     font-weight: 400;
     color: #000333;
     margin: 0 auto;
+    padding: 1em;
 
     @media (max-width: 450px) {
       width: 85%;
@@ -97,7 +98,7 @@ export default function FooterContainer2() {
     margin: 1em auto;
     padding-top: 2em;
     color: #29541c;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Fira Mono', monospace;
     @media (max-width: 450px) {
       padding: 0.5em;
       margin: 0.5em auto;
@@ -131,7 +132,12 @@ export default function FooterContainer2() {
               display: block;
             `}
           >
-            <h2 css={h2Style}>My Projects</h2>
+            <h2 css={h2Style}>
+              My Projects{' '}
+              <span role="img" aria-label="emoji">
+                🌟
+              </span>
+            </h2>
             <p className="lead mb-0" css={footerPStyle}>
               I'm at the beginning of this exciting development journey and i
               understand there are lots of improvments. <br />
@@ -160,12 +166,6 @@ export default function FooterContainer2() {
                   <img css={projectImg} src={findogs} alt="todo project" />
                 </a>
               </div>
-              <div
-                id="basicsCollapseTwo"
-                className="collapse"
-                aria-labelledby="basicsHeadingTwo"
-                data-parent="#basicsAccordion1"
-              ></div>
             </div>
 
             <div className="card-table" css={cartTableStyle}>
@@ -179,18 +179,12 @@ export default function FooterContainer2() {
                   <img css={projectImg} src={ecommerce} alt="todo project" />
                 </a>
               </div>
-              <div
-                id="basicsCollapseTwo"
-                className="collapse"
-                aria-labelledby="basicsHeadingTwo"
-                data-parent="#basicsAccordion1"
-              ></div>
             </div>
 
             <div className="card-table" css={cartTableStyle}>
               <div
                 css={cardHeaderStyle}
-                className="card-header card-collapse__header"
+                className="card-header"
                 id="basicsHeadingFour"
               >
                 <h5 css={h5Style}>React weather app</h5>
@@ -202,18 +196,12 @@ export default function FooterContainer2() {
                   <img css={projectImg} src={weather} alt="todo project" />
                 </a>
               </div>
-              <div
-                id="basicsCollapseFour"
-                className="collapse"
-                aria-labelledby="basicsHeadingFour"
-                data-parent="#basicsAccordion1"
-              ></div>
             </div>
 
             <div className="card-table" css={cartTableStyle}>
               <div
                 css={cardHeaderStyle}
-                className="card-header card-collapse__header"
+                className="card-header"
                 id="basicsHeadingOne"
               >
                 <h5 css={h5Style}>React Random Color generator</h5>
@@ -225,17 +213,11 @@ export default function FooterContainer2() {
                   <img css={projectImg} src={randomColor} alt="todo project" />
                 </a>
               </div>
-              <div
-                id="basicsCollapseOne"
-                className="collapse"
-                aria-labelledby="basicsHeadingOne"
-                data-parent="#basicsAccordion2"
-              ></div>
             </div>
             <div className="card-table" css={cartTableStyle}>
               <div
                 css={cardHeaderStyle}
-                className="card-header card-collapse__header"
+                className="card-header"
                 id="basicsHeadingOne"
               >
                 <h5 css={h5Style}>React Todo App</h5>
@@ -247,18 +229,12 @@ export default function FooterContainer2() {
                   <img css={projectImg} src={todo} alt="todo project" />
                 </a>
               </div>
-              <div
-                id="basicsCollapseOne"
-                className="collapse"
-                aria-labelledby="basicsHeadingOne"
-                data-parent="#basicsAccordion2"
-              ></div>
             </div>
 
             <div className="card-table" css={cartTableStyle}>
               <div
                 css={cardHeaderStyle}
-                className="card-header card-collapse__header"
+                className="card-header "
                 id="basicsHeadingThree"
               >
                 <div className="card-table" css={cartTableStyle}>
