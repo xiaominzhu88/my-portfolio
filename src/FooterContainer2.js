@@ -5,6 +5,7 @@ import countdown from './images/countdown.png';
 import ecommerce from './images/ecommerce.png';
 import randomColor from './images/color.png';
 import weather from './images/weather.png';
+import findogs from './images/findogs.png';
 
 export default function FooterContainer2() {
   const cartTableStyle = css`
@@ -148,6 +149,25 @@ export default function FooterContainer2() {
               display: block;
             `}
           >
+            <div className="card-table" css={cartTableStyle}>
+              <div css={cardHeaderStyle} className="card-header">
+                <h5 css={h5Style}>Findogs</h5>
+                <a
+                  href="https://findogs.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img css={projectImg} src={findogs} alt="todo project" />
+                </a>
+              </div>
+              <div
+                id="basicsCollapseTwo"
+                className="collapse"
+                aria-labelledby="basicsHeadingTwo"
+                data-parent="#basicsAccordion1"
+              ></div>
+            </div>
+
             <div className="card-table" css={cartTableStyle}>
               <div css={cardHeaderStyle} className="card-header">
                 <h5 css={h5Style}>Next.js Ecommerce-page</h5>
