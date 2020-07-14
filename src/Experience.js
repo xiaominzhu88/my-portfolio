@@ -70,6 +70,8 @@ export default function Content3() {
         </span>
         <h2 css={h3Style}>Professional Experience </h2>
         <h5 css={h5Style}>Film and Fashion</h5>
+        <p>Orchestra Musician</p>
+
         <p>Catering assistant at „Allegro Film“ Austria</p>
         <p class="text-luxus">
           Assistant Store Manager for luxury-mode Company
