@@ -74,7 +74,7 @@ export default function Content3() {
 
         <p>Catering assistant at „Allegro Film“ Austria</p>
         <p class="text-luxus">
-          Assistant Store Manager for luxury-mode Company
+          Assistant Store Manager for luxury-fashion Company
         </p>
       </div>
 

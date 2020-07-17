@@ -6,6 +6,7 @@ import ecommerce from './images/ecommerce.png';
 import randomColor from './images/color.png';
 import weather from './images/weather.png';
 import findogs from './images/findogs.png';
+import friends from './images/friends.png';
 
 export default function FooterContainer2() {
   const cartTableStyle = css`
@@ -172,7 +173,7 @@ export default function FooterContainer2() {
               <div css={cardHeaderStyle} className="card-header">
                 <h5 css={h5Style}>Next.js Ecommerce-page</h5>
                 <a
-                  href="https://next-js-ecommerces-store.herokuapp.com/content"
+                  href="https://next-js-ecommerces-store.herokuapp.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -204,9 +205,26 @@ export default function FooterContainer2() {
                 className="card-header"
                 id="basicsHeadingOne"
               >
+                <h5 css={h5Style}>React Friends App</h5>
+                <a
+                  href="https://react-friends-co.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img css={projectImg} src={friends} alt="todo project" />
+                </a>
+              </div>
+            </div>
+
+            <div className="card-table" css={cartTableStyle}>
+              <div
+                css={cardHeaderStyle}
+                className="card-header"
+                id="basicsHeadingOne"
+              >
                 <h5 css={h5Style}>React Random Color generator</h5>
                 <a
-                  href="https://nostalgic-roentgen-e8596b.netlify.app/"
+                  href="https://react-random-color.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -222,7 +240,7 @@ export default function FooterContainer2() {
               >
                 <h5 css={h5Style}>React Todo App</h5>
                 <a
-                  href="https://affectionate-heyrovsky-7618fd.netlify.app/"
+                  href="https://react-todo-app-zhu.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -240,7 +258,7 @@ export default function FooterContainer2() {
                 <div className="card-table" css={cartTableStyle}>
                   <h5 css={h5Style}>React countdown timer</h5>
                   <a
-                    href="https://elastic-meninsky-ca3d1e.netlify.app/"
+                    href="https://count-down-react.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
