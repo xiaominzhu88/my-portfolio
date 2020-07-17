@@ -140,8 +140,8 @@ export default function FooterContainer2() {
               </span>
             </h2>
             <p className="lead mb-0" css={footerPStyle}>
-              I'm at the beginning of this exciting development journey and i
-              understand there are lots of improvments. <br />
+              I'm at the beginning of this exciting development journey and I
+              understand there are lots of improvements. <br />
               I've included some of my recently projects below.
             </p>
           </div>
