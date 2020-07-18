@@ -60,7 +60,7 @@ export default function Footer() {
           className="list-group list-group-flush list-group-transparent"
         >
           <a
-            href="https://twitter.com/home"
+            href="https://twitter.com/Zhu23592976"
             target="_blank"
             rel="noopener noreferrer"
           >
