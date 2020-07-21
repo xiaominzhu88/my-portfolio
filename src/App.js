@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import Footer from './Footer.js';
-import Exp from './Experience';
-import FooterContainer from './Slog';
+import Experience from './Experience';
+import Slog from './Slog';
 import FooterContainer2 from './FooterContainer2';
 import xm from './images/xm.jpg';
 
@@ -48,7 +48,7 @@ function App() {
     margin-bottom: 0 !important;
     font-size: 1.2rem;
     font-weight: 400;
-    color: #000333;
+    color: #49c39e;
     margin-top: 0;
     box-sizing: border-box;
     display: block;
@@ -74,86 +74,6 @@ function App() {
         width: 100%;
       `}
     >
-      {/* <header
-        id="headerDropdown"
-        className="u-header"
-        css={css`
-          top: 0;
-          position: fixed;
-          width: 100%;
-          z-index: 1;
-          box-sizing: border-box;
-        `}
-      >
-        <div className="u-header-section" css={uheadersectionStyle}>
-          <div id="logoandnav" css={logoAndNav}>
-            <div
-              className="sticky_inner"
-              css={css`
-                max-height: 90vh;
-                box-sizing: border-box;
-                display: block;
-              `}
-            >
-              <nav css={navbarStyle} className="navbar">
-                <div
-                  className="u-header"
-                  css={css`
-                    box-sizing: border-box;
-                    display: block;
-                  `}
-                ></div>
-
-                <div
-                  css={css`
-                    @media (min-width: 992px) {
-                      display: flex !important;
-                      flex-basis: auto;
-                    }
-                    padding-bottom: 0 !important;
-                    padding-top: 0 !important;
-                    flex-grow: 1;
-                    align-items: center;
-                    box-sizing: border-box;
-                  `}
-                  id="navBarDropdown"
-                  className="collapse navbar-collapse"
-                >
-                  <ul css={ulStyle} className="navbar-nav u-header__navbar-nav">
-                    <li className="nav-item u-header__nav-item">
-                      <a
-                        css={linkStyle}
-                        className="nav-link u-header__nav-link"
-                        href="/build-a-web-app"
-                      >
-                        About{' '}
-                      </a>
-                    </li>
-                    <li className="nav-item u-header__nav-item">
-                      <a
-                        css={linkStyle}
-                        className="nav-link u-header__nav-link"
-                      >
-                        Projects
-                      </a>
-                    </li>
-                    <li className="nav-item u-header__nav-item">
-                      <a
-                        css={linkStyle}
-                        className="nav-link u-header__nav-link"
-                        href="/manage-a-web-app"
-                      >
-                        Contact{' '}
-                      </a>
-                    </li>
-                  </ul> 
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header> */}
-
       <div
         className="header"
         css={css`
@@ -187,8 +107,8 @@ function App() {
         <img
           src={xm}
           css={css`
-            width: 20em;
-            height: 15em;
+            width: 10em;
+            height: 8em;
             margin: 1em auto;
             border-radius: 50%;
             @media (max-width: 450px) {
@@ -247,14 +167,17 @@ function App() {
           </div>
           <hr />
 
-          <Exp />
+          <div className="ex-sl">
+            <Experience />
+            <Slog />
+          </div>
 
-          <FooterContainer />
           <FooterContainer2 />
 
           <Footer />
         </div>
       </div>
+      <style jsx>{``}</style>
     </div>
   );
 }

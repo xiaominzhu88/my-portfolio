@@ -1,8 +1,11 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import fashion from './images/luxusmode.jpg';
+import ExComponent from './ExComponent';
+import { useState } from 'react';
 
 export default function Content3() {
+  const [show, setShow] = useState(false);
+
   const divContainerStyle = css`
     @media (max-width: 450px) {
       align-items: center !important;
@@ -11,42 +14,7 @@ export default function Content3() {
   `;
 
   const textContainer2Style = css`
-    @media (max-width: 450px) {
-      margin: 1em auto;
-    }
-    margin: 2em auto;
-  `;
-
-  const h3Style = css`
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-    line-height: 1.5;
-    color: #494444;
-    margin-top: 0;
-    font-family: 'Fira Mono', monospace;
-    box-sizing: border-box;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  `;
-
-  const h5Style = css`
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    line-height: 1.5;
-    color: #000333;
-    margin-top: 0;
-    font-family: 'Fira Mono', monospace;
-    box-sizing: border-box;
-    display: block;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin: 0 auto;
   `;
 
   const span = css`
@@ -58,46 +26,30 @@ export default function Content3() {
     padding: 0.625rem 1.125rem;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
-    margin-bottom: 1rem !important;
     box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: 0.5em auto;
   `;
 
+  const showExToggle = () => {
+    setShow(!show);
+  };
   return (
     <div css={divContainerStyle} className="ex-container">
       <div css={textContainer2Style} className="ex-text-container">
-        <span css={span} className="u-label u-label--yellow mb-3">
+        <button onClick={showExToggle} css={span}>
           Experience
-        </span>
-        <h2 css={h3Style}>Professional Experience </h2>
-        <h5 css={h5Style}>Film and Fashion</h5>
-        <p>Orchestra Musician</p>
-
-        <p>Catering assistant at „Allegro Film“ Austria</p>
-        <p class="text-luxus">
-          Assistant Store Manager for luxury-fashion Company
-        </p>
+        </button>
+        {show ? <ExComponent /> : null}
       </div>
-
-      <div className="ex-image">
-        <img
-          className="ex-img"
-          css={css`
-            max-width: 100%;
-            width: 18em;
-            height: 12em;
-            border-radius: 5px;
-            margin: 2em auto;
-
-            @media (max-width: 450px) {
-              margin: 1.5em auto;
-              width: 10em;
-              height: 7em;
-            }
-          `}
-          src={fashion}
-          alt="fasion"
-        />
-      </div>
+      <style jsx>{`
+        button:hover {
+          background-color: #343734;
+          text-decoration: none;
+        }
+      `}</style>
     </div>
   );
 }

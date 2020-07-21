@@ -1,7 +1,10 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
+import { useState } from 'react';
+import SlogComponent from './SlogComponent';
 
 export default function FooterContainer() {
+  const [show, setShow] = useState(false);
   const divContainerStyle = css`
     @media (max-width: 450px) {
       margin: 2em auto;
@@ -11,29 +14,6 @@ export default function FooterContainer() {
     min-height: 1px;
   `;
 
-  const h2Style = css`
-    font-size: calc(1.375rem + (1vw - 3.75px) * 1.1268);
-    line-height: calc(1.875rem + 6 * ((100vw - 21rem) / 680));
-    font-weight: 700;
-    margin: 1em auto;
-    font-family: 'Fira Mono', monospace;
-    box-sizing: border-box;
-    color: #494444;
-  `;
-
-  const pStyle = css`
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #034b35;
-    margin: 0 auto;
-    box-sizing: border-box;
-
-    @media (max-width: 450px) {
-      margin: 1em auto;
-      font-size: 1rem;
-      padding: 0.5em;
-    }
-  `;
   const span = css`
     color: #49c39e;
     background-color: rgba(73, 195, 158, 0.1);
@@ -41,20 +21,29 @@ export default function FooterContainer() {
     font-weight: 900;
     padding: 0.625rem 1.125rem;
     border-radius: 5px;
-    margin: 2em auto;
+    margin: 0.5em auto;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    outline: none;
   `;
 
+  const showSlogToggle = () => {
+    setShow(!show);
+  };
   return (
     <div css={divContainerStyle} className="col-12 text-center w-md-80 mx-auto">
-      <span css={span} className="span">
+      <button css={span} className="span" onClick={showSlogToggle}>
         Today
-      </span>
-
-      <h2 css={h2Style}>Frontend Web Developer</h2>
-      <p css={pStyle} className="lead mb-0">
-        {' '}
-        Life without change is incomplete, thanks to the Web Resources{' '}
-      </p>
+      </button>
+      {show ? <SlogComponent /> : null}
+      <style jsx>{`
+        button:hover {
+          background-color: #343734;
+          text-decoration: none;
+        }
+      `}</style>
     </div>
   );
 }

@@ -4,7 +4,6 @@ import todo from './images/todo.png';
 import countdown from './images/countdown.png';
 import ecommerce from './images/ecommerce.png';
 import randomColor from './images/color.png';
-import weather from './images/weather.png';
 import findogs from './images/findogs.png';
 import friends from './images/friends.png';
 
@@ -14,13 +13,12 @@ export default function FooterContainer2() {
     border-radius: 10px;
     @media (max-width: 450px) {
       width: 100%;
-      margin: 1em auto;
+      margin: 0 auto;
+      padding-bottom: 0.5em;
     }
+    padding-bottom: 1em;
   `;
   const FooterContainer2Style = css`
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
     background-color: #10a89a12 !important;
     text-align: center;
     @media (max-width: 450px) {
@@ -34,17 +32,15 @@ export default function FooterContainer2() {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
   `;
 
   const h2Style = css`
-    font-size: calc(1.375rem + (1vw - 3.75px) * 1.1268);
-    line-height: calc(1.875rem + 6 * ((100vw - 21rem) / 680));
+    font-size: 1.5em;
+    line-height: 0.5em;
     font-weight: 700;
     margin: 1em auto;
     font-family: 'Fira Mono', monospace;
-    color: #29541c;
+    color: #494444;
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
   `;
@@ -52,9 +48,8 @@ export default function FooterContainer2() {
   const footerPStyle = css`
     font-size: 1em;
     font-weight: 400;
-    color: #000333;
+    color: #49c39e;
     margin: 0 auto;
-    padding: 1em;
 
     @media (max-width: 450px) {
       width: 85%;
@@ -64,7 +59,6 @@ export default function FooterContainer2() {
 
   const col6 = css`
     width: 60%;
-    padding-left: 15px;
     margin: 0 auto;
     @media (max-width: 450px) {
       width: 85%;
@@ -72,32 +66,25 @@ export default function FooterContainer2() {
     }
   `;
 
-  const cardHeaderStyle = css`
-    border-radius: 0.25rem 0.25rem 0 0;
-    padding: 0;
-    background-color: transparent;
-    margin-bottom: 0;
-    @media (max-width: 450px) {
-      padding: 0.5em;
-      margin: 0.5em auto;
-    }
-  `;
-
   const projectImg = css`
     width: 10em;
     height: 6em;
-    margin: 1em auto;
+    margin: 0 auto;
     box-shadow: 5px 8px 11px gray;
     @media (max-width: 450px) {
       width: 7em;
       height: 5em;
+    }
+    :hover {
+      width: 11em;
+      height: 7em;
     }
   `;
 
   const h5Style = css`
     font-size: 1.1rem;
     margin: 1em auto;
-    padding-top: 2em;
+    padding-top: 1em;
     color: #29541c;
     font-family: 'Fira Mono', monospace;
     @media (max-width: 450px) {
@@ -111,7 +98,7 @@ export default function FooterContainer2() {
     <div className="footerContainer2" css={FooterContainer2Style}>
       <div className="footerContainerRow" css={FooterContainerRowStyle}>
         <div
-          className="col-lg-8 text-center mx-auto"
+          className="text-center"
           css={css`
             text-align: center !important;
             margin-left: auto !important;
@@ -151,129 +138,116 @@ export default function FooterContainer2() {
           <div
             className="mb-5"
             css={css`
-              margin-bottom: 2rem !important;
-              box-sizing: border-box;
-              display: block;
+              margin-bottom: 1em !important;
             `}
           >
             <div className="card-table" css={cartTableStyle}>
-              <div css={cardHeaderStyle} className="card-header">
+              <a
+                href="https://findogs.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* <div css={cardHeaderStyle} className="card-header"> */}
                 <h5 css={h5Style}>Findogs</h5>
-                <a
-                  href="https://findogs.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img css={projectImg} src={findogs} alt="todo project" />
-                </a>
-              </div>
+                <img css={projectImg} src={findogs} alt="todo project" />
+                {/* </div> */}
+              </a>
             </div>
 
             <div className="card-table" css={cartTableStyle}>
-              <div css={cardHeaderStyle} className="card-header">
-                <h5 css={h5Style}>Next.js Ecommerce-page</h5>
-                <a
-                  href="https://next-js-ecommerces-store.herokuapp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img css={projectImg} src={ecommerce} alt="todo project" />
-                </a>
-              </div>
-            </div>
-
-            <div className="card-table" css={cartTableStyle}>
-              <div
-                css={cardHeaderStyle}
-                className="card-header"
-                id="basicsHeadingFour"
+              {/* <div css={cardHeaderStyle} className="card-header"> */}
+              <h5 css={h5Style}>Next.js Ecommerce-page</h5>
+              <a
+                href="https://next-js-ecommerces-store.herokuapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <h5 css={h5Style}>React weather app</h5>
-                <a
-                  href="https://codesandbox.io/s/github/xiaominzhu88/react-weather-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img css={projectImg} src={weather} alt="todo project" />
-                </a>
-              </div>
+                <img css={projectImg} src={ecommerce} alt="todo project" />
+              </a>
+              {/* </div> */}
             </div>
 
             <div className="card-table" css={cartTableStyle}>
-              <div
+              {/* <div
                 css={cardHeaderStyle}
                 className="card-header"
                 id="basicsHeadingOne"
+              > */}
+              <h5 css={h5Style}>React Friends App</h5>
+              <a
+                href="https://react-friends-co.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <h5 css={h5Style}>React Friends App</h5>
-                <a
-                  href="https://react-friends-co.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img css={projectImg} src={friends} alt="todo project" />
-                </a>
-              </div>
+                <img css={projectImg} src={friends} alt="todo project" />
+              </a>
+              {/* </div> */}
             </div>
 
             <div className="card-table" css={cartTableStyle}>
-              <div
+              {/* <div
                 css={cardHeaderStyle}
                 className="card-header"
                 id="basicsHeadingOne"
+              > */}
+              <h5 css={h5Style}>React Random Color generator</h5>
+              <a
+                href="https://react-random-color.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <h5 css={h5Style}>React Random Color generator</h5>
-                <a
-                  href="https://react-random-color.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img css={projectImg} src={randomColor} alt="todo project" />
-                </a>
-              </div>
-            </div>
-            <div className="card-table" css={cartTableStyle}>
-              <div
-                css={cardHeaderStyle}
-                className="card-header"
-                id="basicsHeadingOne"
-              >
-                <h5 css={h5Style}>React Todo App</h5>
-                <a
-                  href="https://react-todo-app-zhu.netlify.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img css={projectImg} src={todo} alt="todo project" />
-                </a>
-              </div>
+                <img css={projectImg} src={randomColor} alt="todo project" />
+              </a>
+              {/* </div> */}
             </div>
 
             <div className="card-table" css={cartTableStyle}>
-              <div
+              {/* <div
+                css={cardHeaderStyle}
+                className="card-header"
+                id="basicsHeadingOne"
+              > */}
+              <h5 css={h5Style}>React Todo App</h5>
+              <a
+                href="https://react-todo-app-zhu.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img css={projectImg} src={todo} alt="todo project" />
+              </a>
+              {/* </div> */}
+            </div>
+
+            <div className="card-table" css={cartTableStyle}>
+              {/* <div
                 css={cardHeaderStyle}
                 className="card-header "
                 id="basicsHeadingThree"
-              >
-                <div className="card-table" css={cartTableStyle}>
-                  <h5 css={h5Style}>React countdown timer</h5>
-                  <a
-                    href="https://count-down-react.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      css={projectImg}
-                      src={countdown}
-                      alt="countdown project"
-                    />
-                  </a>
-                </div>
+              > */}
+              <div className="card-table" css={cartTableStyle}>
+                <h5 css={h5Style}>React countdown timer</h5>
+                <a
+                  href="https://count-down-react.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    css={projectImg}
+                    src={countdown}
+                    alt="countdown project"
+                  />
+                </a>
+                {/* </div> */}
               </div>
             </div>
           </div>
         </div>
       </div>
+      <style jsx>{`
+        a {
+          text-decoration: none;
+        }
+      `}</style>
     </div>
   );
 }
