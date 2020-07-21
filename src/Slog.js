@@ -5,6 +5,7 @@ import SlogComponent from './SlogComponent';
 
 export default function FooterContainer() {
   const [show, setShow] = useState(false);
+
   const divContainerStyle = css`
     @media (max-width: 450px) {
       margin: 2em auto;

@@ -13,9 +13,8 @@ function App() {
     font-weight: 700;
     margin: 0 auto;
     font-family: 'Fira Mono', monospace;
-    color: #494444;
-    box-sizing: border-box;
-    padding: 1em;
+    color: #666863;
+    padding: 0.5em;
 
     @media (max-width: 450px) {
       margin: 0 auto;
@@ -26,12 +25,12 @@ function App() {
   `;
 
   const h2_style = css`
-    font-size: calc(1.375rem + (1vw - 3.75px) * 1.1268);
-    line-height: calc(1.875rem + 6 * ((100vw - 21rem) / 680));
+    font-size: 1.8em;
+    line-height: 0.5em;
     font-weight: 700;
     margin: 1em auto;
     font-family: 'Fira Mono', monospace;
-    color: #494444;
+    color: #666863;
 
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
@@ -48,7 +47,7 @@ function App() {
     margin-bottom: 0 !important;
     font-size: 1.2rem;
     font-weight: 400;
-    color: #49c39e;
+    color: #8d8f8a;
     margin-top: 0;
     box-sizing: border-box;
     display: block;
@@ -107,9 +106,9 @@ function App() {
         <img
           src={xm}
           css={css`
-            width: 10em;
-            height: 8em;
-            margin: 1em auto;
+            width: 12em;
+            height: 10em;
+            margin: 0 auto;
             border-radius: 50%;
             @media (max-width: 450px) {
               width: 60% !important;

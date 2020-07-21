@@ -7,9 +7,9 @@ export default function ExComponent() {
   const pStyle = css`
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
-    color: #49c39e;
+    color: #8d8f8a;
     font-family: 'Fira Mono', monospace;
     box-sizing: border-box;
   `;

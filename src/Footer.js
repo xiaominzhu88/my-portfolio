@@ -3,21 +3,18 @@ import { css, jsx } from '@emotion/core';
 import twitter from './images/twitter.png';
 import github from './images/github.png';
 import linkedIn from './images/linkedIn.png';
-import email from './images/email.png';
-import tel from './images/tel.png';
 
 export default function Footer() {
   const footerh3Style = css`
     color: #fff !important;
-    margin-bottom: 1rem !important;
     font-size: 1em;
-    font-weight: 500;
-    line-height: 1.5;
+    font-weight: 700;
+    line-height: 1.2;
     font-family: 'Fira Mono', monospace;
-    box-sizing: border-box;
-    display: block;
-    padding: 1em;
+    padding: 0.6em;
     background-color: #7d787882;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
   `;
 
   const divRowStyle = css`
@@ -52,7 +49,10 @@ export default function Footer() {
         `}
       >
         <h3 css={footerh3Style} className="h6 text-white mb-3">
-          Thank You
+          Thank You{' '}
+          <span role="img" aria-label="emoji">
+            💚
+          </span>
         </h3>
 
         <div
@@ -101,26 +101,6 @@ export default function Footer() {
             />
           </a>
         </div>
-
-        <img
-          src={email}
-          css={css`
-            height: 1em;
-            width: 1.5em;
-            margin-left: 1em;
-          `}
-          alt="email"
-        />
-
-        <img
-          src={tel}
-          css={css`
-            height: 1.1em;
-            width: 2em;
-            margin-left: 1em;
-          `}
-          alt="tel"
-        />
       </div>
     </footer>
   );

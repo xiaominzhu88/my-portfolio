@@ -6,8 +6,11 @@ import ecommerce from './images/ecommerce.png';
 import randomColor from './images/color.png';
 import findogs from './images/findogs.png';
 import friends from './images/friends.png';
+import { useState } from 'react';
 
 export default function FooterContainer2() {
+  const [show, setShow] = useState(false);
+
   const cartTableStyle = css`
     background-color: #fff !important;
     border-radius: 10px;
@@ -34,22 +37,27 @@ export default function FooterContainer2() {
     flex-wrap: wrap;
   `;
 
-  const h2Style = css`
-    font-size: 1.5em;
-    line-height: 0.5em;
-    font-weight: 700;
-    margin: 1em auto;
-    font-family: 'Fira Mono', monospace;
-    color: #494444;
-    text-rendering: optimizeLegibility;
+  const span = css`
+    color: #49c39e;
+    background-color: rgba(4, 30, 22, 0.1);
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0.625rem 1.125rem;
+    border-radius: 5px;
+    margin: 0.5em auto;
+    transition: 0.2s ease-in-out;
     box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    outline: none;
   `;
 
   const footerPStyle = css`
     font-size: 1em;
     font-weight: 400;
-    color: #49c39e;
-    margin: 0 auto;
+    color: #8d8f8a;
+    margin: 1em auto;
+    width: 70%;
 
     @media (max-width: 450px) {
       width: 85%;
@@ -94,6 +102,10 @@ export default function FooterContainer2() {
     }
   `;
 
+  const showSlogToggle = () => {
+    setShow(!show);
+  };
+
   return (
     <div className="footerContainer2" css={FooterContainer2Style}>
       <div className="footerContainerRow" css={FooterContainerRowStyle}>
@@ -120,13 +132,17 @@ export default function FooterContainer2() {
               display: block;
             `}
           >
-            <h2 css={h2Style}>
+            <button onClick={showSlogToggle} css={span}>
               My Projects{' '}
               <span role="img" aria-label="emoji">
-                🌟
+                🟢
               </span>
-            </h2>
-            <p className="lead mb-0" css={footerPStyle}>
+            </button>
+            <p
+              className="lead mb-0"
+              css={footerPStyle}
+              style={{ display: show ? 'block' : 'none' }}
+            >
               I'm at the beginning of this exciting development journey and I
               understand there are lots of improvements. <br />
               I've included some of my recently projects below.
