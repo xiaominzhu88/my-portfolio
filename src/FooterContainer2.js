@@ -176,7 +176,7 @@ export default function FooterContainer2() {
 
             <div className="card-table" css={cartTableStyle}>
               {/* <div css={cardHeaderStyle} className="card-header"> */}
-              <h5 css={h5Style}>Next.js Ecommerce-page</h5>
+              <h5 css={h5Style}>NextJs Ecommerce-page</h5>
               <a
                 href="https://next-js-ecommerces-store.herokuapp.com"
                 target="_blank"
