@@ -5,7 +5,7 @@ import Experience from './Experience';
 import Slog from './Slog';
 import FooterContainer2 from './FooterContainer2';
 import xm from './images/xm.jpg';
-import ProjectsGrid from './ProjectsGrid';
+//import ProjectsGrid from './ProjectsGrid';
 
 function App() {
   const h1Style = css`
