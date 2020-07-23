@@ -31,6 +31,11 @@ export default function Content3() {
     cursor: pointer;
     outline: none;
     margin: 0.5em auto;
+
+    :hover {
+      background-color: #343734;
+      text-decoration: none;
+    }
   `;
 
   const showExToggle = () => {
@@ -44,12 +49,6 @@ export default function Content3() {
         </button>
         {show ? <ExComponent /> : null}
       </div>
-      <style jsx>{`
-        button:hover {
-          background-color: #343734;
-          text-decoration: none;
-        }
-      `}</style>
     </div>
   );
 }

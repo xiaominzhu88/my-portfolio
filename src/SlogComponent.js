@@ -4,8 +4,8 @@ import { css, jsx } from '@emotion/core';
 
 export default function SlogComponent() {
   const h2Style = css`
-    font-size: 1.5em;
-    line-height: 0.5em;
+    font-size: 1em;
+    line-height: 1em;
     font-weight: 700;
     margin: 1em auto;
     font-family: 'Fira Mono', monospace;
@@ -26,21 +26,19 @@ export default function SlogComponent() {
       padding: 0.5em;
     }
   `;
+  const slogStyle = css`
+    background-color: #10a89a12;
+    padding: 1.5em;
+    border-radius: 10px;
+  `;
   return (
     <React.Fragment>
-      <div className="slog-c">
+      <div className="slog-c" css={slogStyle}>
         <h2 css={h2Style}>Frontend Web Developer</h2>
         <p css={pStyle} className="lead mb-0">
           {' '}
           Life without change is incomplete, thanks to the Web Resources{' '}
         </p>
-        <style jsx>{`
-          .slog-c {
-            background-color: #10a89a12;
-            padding: 1.5em;
-            border-radius: 10px;
-          }
-        `}</style>
       </div>
     </React.Fragment>
   );

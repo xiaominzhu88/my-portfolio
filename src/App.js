@@ -176,7 +176,6 @@ function App() {
           <Footer />
         </div>
       </div>
-      <style jsx>{``}</style>
     </div>
   );
 }

@@ -28,6 +28,10 @@ export default function FooterContainer() {
     border: none;
     cursor: pointer;
     outline: none;
+    :hover {
+      background-color: #343734;
+      text-decoration: none;
+    }
   `;
 
   const showSlogToggle = () => {
@@ -39,12 +43,6 @@ export default function FooterContainer() {
         Today
       </button>
       {show ? <SlogComponent /> : null}
-      <style jsx>{`
-        button:hover {
-          background-color: #343734;
-          text-decoration: none;
-        }
-      `}</style>
     </div>
   );
 }

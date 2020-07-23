@@ -102,6 +102,10 @@ export default function FooterContainer2() {
     }
   `;
 
+  const aStyle = css`
+    text-decoration: none;
+  `;
+
   const showSlogToggle = () => {
     setShow(!show);
   };
@@ -246,6 +250,7 @@ export default function FooterContainer2() {
                   href="https://count-down-react.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  css={aStyle}
                 >
                   <img
                     css={projectImg}
@@ -259,11 +264,6 @@ export default function FooterContainer2() {
           </div>
         </div>
       </div>
-      <style jsx>{`
-        a {
-          text-decoration: none;
-        }
-      `}</style>
     </div>
   );
 }

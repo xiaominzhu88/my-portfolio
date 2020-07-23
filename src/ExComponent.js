@@ -12,14 +12,18 @@ export default function ExComponent() {
     color: #8d8f8a;
     font-family: 'Fira Mono', monospace;
     box-sizing: border-box;
+    background-color: #10a89a12;
+    padding: 1.5em;
+    border-radius: 10px;
   `;
+
   return (
     <React.Fragment>
       <div className="ex-c" css={pStyle}>
         <p>Orchestra Musician</p>
 
         <p>Catering assistant at „Allegro Film“ Austria</p>
-        <p class="text-luxus">
+        <p className="text-luxus">
           Assistant Store Manager for luxury-fashion Company
         </p>
 
@@ -43,13 +47,6 @@ export default function ExComponent() {
             alt="fasion"
           />
         </div>
-        <style jsx>{`
-          .ex-c {
-            background-color: #10a89a12;
-            padding: 1.5em;
-            border-radius: 10px;
-          }
-        `}</style>
       </div>
     </React.Fragment>
   );
