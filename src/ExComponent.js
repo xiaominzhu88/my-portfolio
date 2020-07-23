@@ -22,9 +22,8 @@ export default function ExComponent() {
       <div className="ex-c" css={pStyle}>
         <p>Orchestra Musician</p>
 
-        <p>Catering assistant at „Allegro Film“ Austria</p>
         <p className="text-luxus">
-          Assistant Store Manager for luxury-fashion Company
+          Assistant Store Manager High End Fashion Company
         </p>
 
         <div className="ex-image">

@@ -70,8 +70,9 @@ export default function FooterContainer2() {
   `;
 
   const col6 = css`
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
+    display: flex;
     @media (max-width: 450px) {
       width: 85%;
       margin: 0 auto;
@@ -160,7 +161,7 @@ export default function FooterContainer2() {
 
         <div className="project-container" css={col6}>
           <div
-            className="mb-5"
+            className="projects"
             css={css`
               margin-bottom: 1em !important;
             `}
