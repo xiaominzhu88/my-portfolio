@@ -50,6 +50,10 @@ export default function FooterContainer2() {
     border: none;
     cursor: pointer;
     outline: none;
+    :hover {
+      background-color: #343734;
+      text-decoration: none;
+    }
   `;
 
   const footerPStyle = css`
@@ -149,7 +153,7 @@ export default function FooterContainer2() {
             >
               I'm at the beginning of this exciting development journey and I
               understand there are lots of improvements. <br />
-              I've included some of my recently projects below.
+              I've included some of my recently web projects below.
             </p>
           </div>
         </div>
