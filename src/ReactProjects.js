@@ -105,7 +105,7 @@ export default function ReactProjects() {
         <div className="card-table" css={cartTableStyle}>
           <h5 css={h5Style}>React countdown-timer</h5>
           <a
-            href="https://count-down-react.netlify.app/DateCounter"
+            href="https://count-down-react.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
             css={aStyle}
