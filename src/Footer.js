@@ -39,6 +39,7 @@ export default function Footer() {
       css={css`
         background-color: #000333 !important;
         display: block;
+        margin: 0.8em auto;
       `}
     >
       <div

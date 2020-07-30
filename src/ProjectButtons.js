@@ -11,6 +11,8 @@ export default function ProjectButtons(props) {
     margin: 0.5em 1em;
     transition: 0.2s ease-in-out;
     border: none;
+    text-align: center;
+
     cursor: pointer;
     outline: none;
     :hover {
@@ -39,6 +41,11 @@ export default function ProjectButtons(props) {
           justify-content: space-between;
           align-items: center;
           margin: 1em auto;
+          text-align: center;
+        }
+        @media (max-width: 600px) {
+          margin: 0 auto;
+          text-align: center;
         }
       `}</style>
     </div>

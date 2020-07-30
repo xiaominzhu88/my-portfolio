@@ -59,7 +59,7 @@ export default function ReactProjects() {
       `}
     >
       <div className="card-table" css={cartTableStyle}>
-        <h5 css={h5Style}>React Weather App</h5>
+        <h5 css={h5Style}>React weather-app</h5>
         <a
           href="https://zhu-weather-react.netlify.app/"
           target="_blank"
@@ -70,7 +70,7 @@ export default function ReactProjects() {
       </div>
 
       <div className="card-table" css={cartTableStyle}>
-        <h5 css={h5Style}>React Friends App</h5>
+        <h5 css={h5Style}>React friends-app</h5>
         <a
           href="https://react-friends-co.netlify.app/"
           target="_blank"
@@ -81,7 +81,7 @@ export default function ReactProjects() {
       </div>
 
       <div className="card-table" css={cartTableStyle}>
-        <h5 css={h5Style}>React Random Color generator</h5>
+        <h5 css={h5Style}>React random-color-generator</h5>
         <a
           href="https://react-random-color.netlify.app/"
           target="_blank"
@@ -92,7 +92,7 @@ export default function ReactProjects() {
       </div>
 
       <div className="card-table" css={cartTableStyle}>
-        <h5 css={h5Style}>React Todo App</h5>
+        <h5 css={h5Style}>React todo-app</h5>
         <a
           href="https://react-todo-app-zhu.netlify.app"
           target="_blank"
@@ -103,9 +103,9 @@ export default function ReactProjects() {
       </div>
       <div className="card-table" css={cartTableStyle}>
         <div className="card-table" css={cartTableStyle}>
-          <h5 css={h5Style}>React countdown timer</h5>
+          <h5 css={h5Style}>React countdown-timer</h5>
           <a
-            href="https://count-down-react.netlify.app/"
+            href="https://count-down-react.netlify.app/DateCounter"
             target="_blank"
             rel="noopener noreferrer"
             css={aStyle}

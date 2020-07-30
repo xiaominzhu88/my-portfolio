@@ -5,7 +5,7 @@ import NextJsProjects from './NextJsProjects';
 import ReactProjects from './ReactProjects';
 import ProjectButtons from './ProjectButtons';
 
-export default function FooterContainer2(props) {
+export default function FooterContainer2() {
   const [show, setShow] = useState(false);
   const [showNextProjects, setShowNextProjects] = useState(false);
   const [showReactProjects, setShowReactProjects] = useState(false);
@@ -14,6 +14,7 @@ export default function FooterContainer2(props) {
     background-color: #10a89a12 !important;
     text-align: center;
     border-radius: 5px;
+
     @media (max-width: 450px) {
       margin: 0 auto;
     }

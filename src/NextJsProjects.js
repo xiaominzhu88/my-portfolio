@@ -25,8 +25,8 @@ export default function NextJsProjects() {
     :hover {
       width: 9em;
       height: 5em;
-      transform: skew(13deg, 13deg);
-      transition: 1s;
+      transform: rotate(360deg);
+      transition: 3s;
     }
   `;
   const h5Style = css`

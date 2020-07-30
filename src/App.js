@@ -97,7 +97,6 @@ function App() {
         font-size: 1.1rem;
         font-weight: 400;
         line-height: 1.7;
-        padding: 0.6em;
         width: 100%;
       `}
     >

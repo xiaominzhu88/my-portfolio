@@ -15,7 +15,7 @@ export default function ExComponent() {
     box-sizing: border-box;
     background-color: #10a89a12;
     padding: 1.5em;
-    border-radius: 10px;
+    border-radius: 5px;
   `;
 
   return (
@@ -50,6 +50,7 @@ export default function ExComponent() {
                 width: 6em;
                 height: 3em;
               }
+
               animation: turner 5s infinite linear;
               @keyframes turner {
                 0% {
@@ -73,10 +74,6 @@ export default function ExComponent() {
             alt="fasion"
           />
         </div>
-        <style jsx>{`
-          img {
-          }
-        `}</style>
       </div>
     </React.Fragment>
   );

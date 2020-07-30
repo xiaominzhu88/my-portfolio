@@ -8,7 +8,7 @@ export default function Content3() {
 
   const divContainerStyle = css`
     background-color: #10a89a12 !important;
-
+    border-radius: 5px;
     @media (max-width: 450px) {
       align-items: center !important;
     }
@@ -32,7 +32,7 @@ export default function Content3() {
     border: none;
     cursor: pointer;
     outline: none;
-    margin: 0.5em auto;
+    margin: 1em auto;
 
     :hover {
       background-color: #343734;
