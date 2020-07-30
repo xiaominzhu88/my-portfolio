@@ -87,7 +87,7 @@ export default function Footer() {
             />
           </a>
           <a
-            href="https://www.linkedin.com/in/xiaomin-zhu-79462815/"
+            href="https://www.linkedin.com/in/xiaominzhu/"
             target="_blank"
             rel="noopener noreferrer"
           >

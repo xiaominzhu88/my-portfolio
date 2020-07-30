@@ -4,7 +4,7 @@ import Footer from './Footer.js';
 import Experience from './Experience';
 import Slog from './Slog';
 import FooterContainer2 from './FooterContainer2';
-import xm from './images/xm.jpg';
+import xm from './images/xm.png';
 //import ProjectsGrid from './ProjectsGrid';
 
 function App() {
@@ -59,6 +59,19 @@ function App() {
       font-size: 0.8em;
     }
   `;
+  const profileImage = css`
+    border-radius: 50%;
+    background-position: 50% 50%;
+    width: 250px;
+    height: 280px;
+    margin: 1em auto;
+    object-fit: 'cover';
+    @media (max-width: 450px) {
+      width: 6em !important;
+      height: 8em !important;
+      margin: 1em auto;
+    }
+  `;
 
   return (
     <div
@@ -77,7 +90,7 @@ function App() {
       <div
         className="header"
         css={css`
-          background-color: #10a89a12 !important;
+          background-color: #10a89a12;
           text-align: center;
 
           @media (max-width: 450px) {
@@ -100,25 +113,13 @@ function App() {
         >
           <h1 css={h1Style} className="display">
             Hi! I'm Xiaomin Zhu <br />
-            Welcome to my portfolio
+            Welcome to my Portfolio
           </h1>
         </div>
 
-        <img
-          src={xm}
-          css={css`
-            width: 12em;
-            height: 10em;
-            margin: 0 auto;
-            border-radius: 50%;
-            @media (max-width: 450px) {
-              width: 60% !important;
-              height: 30% !important;
-              margin: 1.5em auto;
-            }
-          `}
-          alt="profie"
-        />
+        <div className="profileImage">
+          <img src={xm} alt="profile" css={profileImage} />
+        </div>
       </div>
 
       <div

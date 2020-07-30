@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { useState } from 'react';
 import { css, jsx } from '@emotion/core';
-
+import ProjectButtons from './ProjectButtons';
 import { makeStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
@@ -13,6 +13,7 @@ import ecommerce from './images/ecommerce.png';
 import randomColor from './images/color.png';
 import findogs from './images/findogs.png';
 import friends from './images/friends.png';
+import weather from './images/weather.png';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -23,7 +24,7 @@ const useStyles = makeStyles(() => ({
   },
   gridList: {
     width: 700,
-    height: 600,
+    height: 450,
   },
 }));
 
@@ -36,31 +37,38 @@ const projectsData = [
   },
   {
     img: ecommerce,
-    title: 'ecommerce',
+    title: 'ecommerce-store',
     author: 'NextJs',
     href: 'https://next-js-ecommerces-store.herokuapp.com',
   },
   {
+    img: weather,
+    title: 'weather-app',
+    author: 'React',
+    href: 'https://zhu-weather-react.netlify.app/',
+  },
+  {
     img: todo,
-    title: 'todo',
+    title: 'todo-list',
     author: 'React',
     href: 'https://react-todo-app-zhu.netlify.app',
   },
   {
     img: countdown,
-    title: 'countdown',
+    title: 'countdown-timer',
     author: 'React',
     href: 'https://count-down-react.netlify.app/',
   },
   {
     img: randomColor,
-    title: 'randomColor',
+    title: 'random-color-generator',
     author: 'React',
     href: 'https://react-random-color.netlify.app/',
   },
+
   {
     img: friends,
-    title: 'friends',
+    title: 'friends-app',
     author: 'React',
     href: 'https://react-friends-co.netlify.app/',
   },
@@ -114,24 +122,34 @@ const projectImg = css`
   height: 180px;
   box-shadow: 5px 8px 11px gray;
   margin: 1em auto;
+  border-radius: 13px;
   cursor: pointer;
 
   @media (max-width: 450px) {
     width: 6em;
-    height: 7em;
+    height: 5em;
   }
   :hover {
     width: 310px;
   }
 `;
+const spanStyle = css`
+  color: #ffc107;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1.2em;
+  :hover {
+    color: #fff;
+  }
+`;
 
 export default function ProjectsGrid() {
-  const [show, setShow] = useState(false);
+  const [showText, setShowText] = useState(false);
 
   const classes = useStyles();
 
   const showSlogToggle = () => {
-    setShow(!show);
+    setShowText(!showText);
   };
 
   return (
@@ -141,8 +159,7 @@ export default function ProjectsGrid() {
           className="text-center"
           css={css`
             text-align: center !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
+            margin: 1em auto;
             position: relative;
             width: 100%;
             min-height: 1px;
@@ -169,31 +186,44 @@ export default function ProjectsGrid() {
             <p
               className="projectText"
               css={footerPStyle}
-              style={{ display: show ? 'block' : 'none' }}
+              style={{ display: showText ? 'block' : 'none' }}
             >
               I'm at the beginning of this exciting development journey and I
               understand there are lots of improvements. <br />
               I've included some of my recently web application projects below.
             </p>
           </div>
+          <ProjectButtons />
         </div>
       </div>
 
-      <div className={classes.root} style={{ marginBottom: '2em' }}>
+      <div
+        className={classes.root}
+        style={{
+          marginBottom: '1.5em',
+        }}
+      >
         <GridList cellHeight={200} className={classes.gridList}>
-          <GridListTile
+          {/* <GridListTile
             key="Subheader"
             cols={3}
             style={{ height: 'auto' }}
-          ></GridListTile>
+          ></GridListTile> */}
 
           {projectsData.map((tile) => (
             <GridListTile key={tile.img}>
               <img src={tile.img} alt={tile.title} css={projectImg} />{' '}
               <a href={tile.href}>
                 <GridListTileBar
-                  title={tile.title}
-                  subtitle={<span>{tile.author}</span>}
+                  title={<span css={spanStyle}>{tile.title} </span>}
+                  subtitle={
+                    <span style={{ color: '#FFC107', fontFamily: 'monospace' }}>
+                      <span role="img" aria-label="write-emoji">
+                        {' '}
+                        ✍️ {tile.author}
+                      </span>
+                    </span>
+                  }
                 />{' '}
               </a>
             </GridListTile>

@@ -23,7 +23,7 @@ export default function ExComponent() {
         <p>Orchestra Musician</p>
 
         <p className="text-luxus">
-          Assistant Store Manager High End Fashion Company
+          Assistant Store Manager at High End Fashion Company
         </p>
 
         <div className="ex-image">
@@ -31,15 +31,33 @@ export default function ExComponent() {
             className="ex-img"
             css={css`
               max-width: 100%;
-              width: 18em;
-              height: 12em;
+              width: 10em;
+              height: 5em;
               margin: 2em auto;
               box-shadow: 0px 5px 15px gray;
 
               @media (max-width: 450px) {
                 margin: 1.5em auto;
-                width: 10em;
-                height: 7em;
+                width: 6em;
+                height: 3em;
+              }
+              animation: turner 5s infinite linear;
+              @keyframes turner {
+                0% {
+                  transform: perspective(300px) rotateY(0deg);
+                }
+                25% {
+                  transform: perspective(300px) rotateY(90deg);
+                }
+                50% {
+                  transform: perspective(300px) rotateY(180deg);
+                }
+                75% {
+                  transform: perspective(300px) rotateY(270deg);
+                }
+                100% {
+                  transform: perspective(300px) rotateY(360deg);
+                }
               }
             `}
             src={fashion}
