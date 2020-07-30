@@ -6,7 +6,7 @@ export default function ProjectButtons(props) {
     color: #49c39e;
     background-color: rgba(4, 30, 22, 0.1);
     font-weight: 900;
-    padding: 0.625rem 1.125rem;
+    padding: 0.625rem;
     border-radius: 5px;
     margin: 0.5em 1em;
     transition: 0.2s ease-in-out;
@@ -35,12 +35,12 @@ export default function ProjectButtons(props) {
           ✏️
         </span>
       </button>
-      <style jsx>{`
+      <style jsx="true">{`
         .projectButtons {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin: 1em auto;
+          margin: 0 auto;
           text-align: center;
         }
         @media (max-width: 600px) {

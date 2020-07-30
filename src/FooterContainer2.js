@@ -27,13 +27,12 @@ export default function FooterContainer2() {
     display: flex;
     flex-wrap: wrap;
   `;
-
   const span = css`
     color: #49c39e;
     background-color: rgba(4, 30, 22, 0.1);
     font-size: 1rem;
     font-weight: 900;
-    padding: 0.625rem 1.125rem;
+    padding: 1em;
     border-radius: 5px;
     margin: 0.5em auto;
     transition: 0.2s ease-in-out;

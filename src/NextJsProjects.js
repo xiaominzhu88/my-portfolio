@@ -78,7 +78,7 @@ export default function NextJsProjects() {
           <img css={projectImg} src={ecommerce} alt="todo project" />
         </a>
       </div>
-      <style jsx>{`
+      <style jsx="true">{`
         @media (max-width: 450px) {
           .projects {
             display: block;
