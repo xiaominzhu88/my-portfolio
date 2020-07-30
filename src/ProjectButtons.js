@@ -3,7 +3,8 @@ import { css, jsx } from '@emotion/core';
 
 export default function ProjectButtons(props) {
   const span = css`
-    color: #03a9f4;
+    color: #49c39e;
+    background-color: rgba(4, 30, 22, 0.1);
     font-weight: 900;
     padding: 0.625rem 1.125rem;
     border-radius: 5px;
@@ -37,6 +38,7 @@ export default function ProjectButtons(props) {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          margin: 1em auto;
         }
       `}</style>
     </div>

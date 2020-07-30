@@ -12,7 +12,7 @@ export default function Footer() {
     line-height: 1.2;
     font-family: 'Fira Mono', monospace;
     padding: 0.6em;
-    background-color: #7d787882;
+    background-color: #607d8b;
     margin: 0 auto;
     letter-spacing: 0.1em;
   `;
@@ -39,7 +39,6 @@ export default function Footer() {
       css={css`
         background-color: #000333 !important;
         display: block;
-        box-sizing: border-box;
       `}
     >
       <div

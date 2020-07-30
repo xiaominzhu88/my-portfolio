@@ -30,7 +30,7 @@ export default function ReactProjects() {
     :hover {
       width: 9em;
       height: 5em;
-      transform: skew(22deg, 13deg);
+      transform: skew(-13deg, -13deg);
       transition: 1s;
     }
   `;

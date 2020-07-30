@@ -38,7 +38,7 @@ export default function FooterContainer() {
     setShow(!show);
   };
   return (
-    <div css={divContainerStyle} className="col-12 text-center w-md-80 mx-auto">
+    <div css={divContainerStyle} className="col-12">
       <button css={span} className="span" onClick={showSlogToggle}>
         Today
       </button>

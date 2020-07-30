@@ -2,20 +2,18 @@
 import { css, jsx } from '@emotion/core';
 import Footer from './Footer.js';
 import Experience from './Experience';
-import Slog from './Slog';
+//import Slog from './Slog';
 import FooterContainer2 from './FooterContainer2';
 import xm from './images/xm.png';
 //import ProjectsGrid from './ProjectsGrid';
 
 function App() {
   const h1Style = css`
-    font-size: calc(1.8rem + (1vw - 3.75px) * 1.6901);
-    line-height: calc(2.5rem + (1vw - 3.75px) * 2.2535);
-    font-weight: 700;
-    margin: 0 auto;
+    font-size: 1.5em;
+    line-height: 1.5em;
     font-family: 'Fira Mono', monospace;
-    color: #666863;
-    padding: 0.5em;
+    color: #fff;
+    padding: 0.8em;
 
     @media (max-width: 450px) {
       margin: 0 auto;
@@ -43,6 +41,22 @@ function App() {
       font-size: 1.5em;
     }
   `;
+  const headerPStyle = css`
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #9e9e9e;
+    box-sizing: border-box;
+    display: block;
+    border-top-style: inset;
+    width: 60%;
+
+    @media (max-width: 450px) {
+      text-align: center;
+      line-height: 1.5em;
+      font-size: 0.8em;
+    }
+  `;
 
   const pStyle = css`
     margin-bottom: 0 !important;
@@ -61,7 +75,7 @@ function App() {
   `;
   const profileImage = css`
     border-radius: 50%;
-    background-position: 50% 50%;
+    box-shadow: 8px 10px 18px rgb(158 158 158 / 37%);
     width: 250px;
     height: 280px;
     margin: 1em auto;
@@ -90,7 +104,7 @@ function App() {
       <div
         className="header"
         css={css`
-          background-color: #10a89a12;
+          background-color: #607d8b;
           text-align: center;
 
           @media (max-width: 450px) {
@@ -113,8 +127,11 @@ function App() {
         >
           <h1 css={h1Style} className="display">
             Hi! I'm Xiaomin Zhu <br />
-            Welcome to my Portfolio
           </h1>
+          <p css={headerPStyle}>
+            I create beautiful & functional <br />
+            user interfaces
+          </p>
         </div>
 
         <div className="profileImage">
@@ -126,7 +143,6 @@ function App() {
         className="container about-me"
         css={css`
           display: block;
-          padding: 0.8em;
           text-align: center;
         `}
       >
@@ -166,11 +182,10 @@ function App() {
               Frontend Web Developer, Musician, Assistant Store Manager
             </p>
           </div>
-          <hr />
 
           <div className="ex-sl">
             <Experience />
-            <Slog />
+            {/* <Slog /> */}
           </div>
 
           <FooterContainer2 />

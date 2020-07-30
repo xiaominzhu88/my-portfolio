@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import React from 'react';
 import { css, jsx } from '@emotion/core';
-import fashion from './images/luxusmode.jpg';
+import music from './images/music.jpg';
+import fan from './images/fan.png';
 
 export default function ExComponent() {
   const pStyle = css`
@@ -20,11 +21,19 @@ export default function ExComponent() {
   return (
     <React.Fragment>
       <div className="ex-c" css={pStyle}>
-        <p>Orchestra Musician</p>
-
-        <p className="text-luxus">
-          Assistant Store Manager at High End Fashion Company
-        </p>
+        <img
+          alt="my experience"
+          src={fan}
+          css={css`
+            max-width: 100%;
+            margin: 1em auto;
+            box-shadow: 0px 5px 15px gray;
+            border-top: 15px solid gray;
+            @media (max-width: 450px) {
+              margin: 0.6em auto;
+            }
+          `}
+        />
 
         <div className="ex-image">
           <img
@@ -60,10 +69,14 @@ export default function ExComponent() {
                 }
               }
             `}
-            src={fashion}
+            src={music}
             alt="fasion"
           />
         </div>
+        <style jsx>{`
+          img {
+          }
+        `}</style>
       </div>
     </React.Fragment>
   );

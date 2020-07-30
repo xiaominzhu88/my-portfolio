@@ -13,6 +13,7 @@ export default function FooterContainer2(props) {
   const FooterContainer2Style = css`
     background-color: #10a89a12 !important;
     text-align: center;
+    border-radius: 5px;
     @media (max-width: 450px) {
       margin: 0 auto;
     }
@@ -35,7 +36,6 @@ export default function FooterContainer2(props) {
     border-radius: 5px;
     margin: 0.5em auto;
     transition: 0.2s ease-in-out;
-    box-sizing: border-box;
     border: none;
     cursor: pointer;
     outline: none;
@@ -59,7 +59,6 @@ export default function FooterContainer2(props) {
   `;
 
   const col6 = css`
-    /* width: 60%; */
     margin: 0 auto;
     display: flex;
     @media (max-width: 450px) {
@@ -102,12 +101,11 @@ export default function FooterContainer2(props) {
             className="mb-5"
             css={css`
               margin-bottom: 2rem !important;
-              box-sizing: border-box;
               display: block;
             `}
           >
             <button onClick={showSlogToggle} css={span}>
-              My Projects{' '}
+              Work{' '}
               <span role="img" aria-label="emoji">
                 🟢
               </span>
@@ -117,9 +115,10 @@ export default function FooterContainer2(props) {
               css={footerPStyle}
               style={{ display: show ? 'block' : 'none' }}
             >
-              I'm at the beginning of this exciting development journey and I
-              understand there are lots of improvements. <br />
-              I've included some of my recently web projects below.
+              From Web Components and design to React and NextJs, I'm at the
+              beginning of this exciting development journey, <br />
+              check out my latest web projects.
+              <br />⏬
             </p>
           </div>
         </div>
