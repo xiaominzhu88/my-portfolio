@@ -7,6 +7,7 @@ import friends from './images/friends.png';
 import weather from './images/weather.png';
 import meme from './images/meme.png';
 import videoPlayer from './images/videoplayer.png';
+import markdown from './images/markdown.png';
 
 export default function ReactProjects() {
   const cartTableStyle = css`
@@ -138,7 +139,20 @@ export default function ReactProjects() {
             rel="noopener noreferrer"
             css={aStyle}
           >
-            <img css={projectImg} src={videoPlayer} alt="countdown project" />
+            <img css={projectImg} src={videoPlayer} alt="video project" />
+          </a>
+        </div>
+      </div>
+      <div className="card-table" css={cartTableStyle}>
+        <div className="card-table" css={cartTableStyle}>
+          <h5 css={h5Style}>React markdown previewer</h5>
+          <a
+            href="https://markdown-react-zhu.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            css={aStyle}
+          >
+            <img css={projectImg} src={markdown} alt="video project" />
           </a>
         </div>
       </div>
