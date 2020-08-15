@@ -2,6 +2,7 @@
 import { css, jsx } from '@emotion/core';
 import ecommerce from './images/ecommerce.png';
 import findogs from './images/findogs.png';
+import movie from './images/screenShot-tv.png';
 
 export default function NextJsProjects() {
   const cartTableStyle = css`
@@ -51,7 +52,8 @@ export default function NextJsProjects() {
       css={css`
         margin-bottom: 1em !important;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
       `}
     >
@@ -68,7 +70,7 @@ export default function NextJsProjects() {
       </div>
 
       <div className="card-table" css={cartTableStyle}>
-        <h5 css={h5Style}>NextJs Ecommerce</h5>
+        <h5 css={h5Style}>Ecommerce Store</h5>
         <a
           href="https://next-js-ecommerces-store.herokuapp.com"
           target="_blank"
@@ -76,6 +78,18 @@ export default function NextJsProjects() {
           css={aStyle}
         >
           <img css={projectImg} src={ecommerce} alt="todo project" />
+        </a>
+      </div>
+
+      <div className="card-table" css={cartTableStyle}>
+        <h5 css={h5Style}>Movie Search</h5>
+        <a
+          href="https://movie-next.herokuapp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          css={aStyle}
+        >
+          <img css={projectImg} src={movie} alt="todo project" />
         </a>
       </div>
       <style jsx="true">{`

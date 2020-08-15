@@ -58,13 +58,9 @@ export default function FooterContainer2() {
     }
   `;
 
-  const col6 = css`
+  const projectContainer = css`
     margin: 0 auto;
     display: flex;
-    @media (max-width: 450px) {
-      width: 85%;
-      margin: 0 auto;
-    }
   `;
 
   const showSlogToggle = () => {
@@ -123,7 +119,7 @@ export default function FooterContainer2() {
           </div>
         </div>
 
-        <div className="project-container" css={col6}>
+        <div className="project-container" css={projectContainer}>
           <div className="projects">
             <ProjectButtons
               showNextProjects={showNextProjectsToggle}
