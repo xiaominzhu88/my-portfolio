@@ -23,7 +23,6 @@ export default function FooterContainer2() {
   const FooterContainerRowStyle = css`
     width: 100%;
     min-height: 1px;
-    padding: 15px;
     display: flex;
     flex-wrap: wrap;
   `;
